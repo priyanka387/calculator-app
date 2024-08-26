@@ -1,4 +1,4 @@
-from calc_func import do_addition, do_substraction
+from calc_func import do_addition, do_substraction, do_division
 from multiply import do_multiplication
 
 def main():
@@ -8,6 +8,7 @@ def main():
           1. Add
           2. Substract
           3. Multiply
+          4. Division
           """)
     
 user_input = input("select the function")
@@ -21,6 +22,10 @@ elif user_input == "2":
     result = do_substraction(a,b)
 elif user_input == "3":
     result = do_multiplication(a,b)
+elif user_input == "4":
+    result = do_division(a,b)
+
+
 
 print("Result:", result)
 
